@@ -9,7 +9,7 @@ const TransactionsList = () => {
     useEffect(() => {
         const fetchTransactions = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/transactions');
+                const response = await axios.get('http://13.201.72.16:3001/transactions');
                 console.log(response)
                 console.log(response.data);
                 setTransactions(response.data);
