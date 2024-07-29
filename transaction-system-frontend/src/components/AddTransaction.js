@@ -11,7 +11,7 @@ const AddTransaction = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:3000/transactions', { type, amount, description });
+        await axios.post('http://13.201.72.16:3001/transactions', { type, amount, description });
         console.log("save button is clicked")
         console.log("Type: " +type, "amount: "+amount, "description: " +description)
         navigate('/');
